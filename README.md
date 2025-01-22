@@ -12,11 +12,28 @@ Turn any text into a soothing ASMR-style reading experience. Because sometimes y
 
 ## Installation 🚀
 
+You can install ASMReader using `pip`:
+
+```bash
+pip install asmreader
 ```
-# Clone the repo
-git clone https://github.com/autoscatto/asmreader.git
-cd asmreader
-make install  # Install with development dependencies
+
+For users who prefer to use `pipx`, you can install it globally:
+
+```bash
+pipx install asmreader
+```
+
+If you are using `uv`, you can install it with:
+
+```bash
+uv install asmreader
+```
+
+After installation, you can run the application using the command:
+
+```bash
+asmreader --help
 ```
 
 ## Usage 📣
