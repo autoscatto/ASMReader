@@ -27,7 +27,7 @@ pipx install asmreader
 If you are using `uv`, you can install it with:
 
 ```bash
-uv install asmreader
+uv tool install asmreader
 ```
 
 After installation, you can run the application using the command:
@@ -41,10 +41,10 @@ asmreader --help
 **Important:** Before using the application, you **MUST** call the `download_model` function to download the necessary files.
 
 ```
-make run -- --file path/to/your/2501.00536v2.pdf  # Read a local file
-make run -- --url "https://en.wikipedia.org/wiki/Gigi_D%27Agostino"  # Read a web page
-make run -- --file document.txt --speed 0.8  # Adjust speech speed
-make run -- --file document.pdf --output reading.wav  # Save to file instead of playing
+asmreader --file path/to/your/2501.00536v2.pdf  # Read a local file
+asmreader --url "https://en.wikipedia.org/wiki/Gigi_D%27Agostino"  # Read a web page
+asmreader --file document.txt --speed 0.8  # Adjust speech speed
+asmreader --file document.pdf --output reading.wav  # Save to file instead of playing
 ```
 
 ## Development 🦠
