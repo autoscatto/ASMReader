@@ -31,6 +31,9 @@ jobs:
 
   pypi-publish:
     runs-on: ubuntu-latest
+    environment:
+      name: pypi
+      url: https://pypi.org/p/asmreader
     needs:
       - release-build
     permissions:
